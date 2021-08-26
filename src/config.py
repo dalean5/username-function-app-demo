@@ -10,6 +10,3 @@ def get_postgres_uri():
     db = os.environ.get("DB_NAME", "db")
 
     return f"postgresql://{user}:{password}@{host}:{port}/{db}"
-
-
-# print(get_postgres_uri())
